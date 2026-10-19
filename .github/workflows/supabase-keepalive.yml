@@ -1,0 +1,53 @@
+# Supabase 무료 프로젝트는 일주일 동안 요청이 없으면 '쉬는 중'으로 멈춘다.
+# 3일마다 keepalive() 함수를 한 번 불러서 깨워 두고, 한 달에 한 번 기록을 남겨
+# 공개 저장소의 자동 실행이 60일 뒤 꺼지는 것도 막는다.
+# 필요한 비밀값(Settings > Secrets and variables > Actions): SUPABASE_URL, SUPABASE_KEY(sb_publishable_ 공개 키)
+name: Supabase keepalive
+
+on:
+  schedule:
+    - cron: "17 21 */3 * *"   # 3일마다 (한국 시간 06:17)
+    - cron: "41 0 1 * *"      # 매달 1일: 기록 남기기
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Supabase 깨우기
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+        run: |
+          if [ -z "$SUPABASE_URL" ] || [ -z "$SUPABASE_KEY" ]; then
+            echo "::error::저장소 Settings > Secrets and variables > Actions 에 SUPABASE_URL, SUPABASE_KEY 를 넣어 주세요"
+            exit 1
+          fi
+          for i in 1 2 3; do
+            code=$(curl -s -o out.json -w "%{http_code}" -X POST "${SUPABASE_URL%/}/rest/v1/rpc/keepalive" \
+              -H "apikey: $SUPABASE_KEY" -H "Content-Type: application/json" -d '{}')
+            echo "시도 $i: HTTP $code $(cat out.json)"
+            [ "$code" = "200" ] && exit 0
+            sleep 20
+          done
+          echo "::error::Supabase 응답 $code · 프로젝트가 멈췄으면 Supabase 화면에서 Restore, 함수가 없으면 setup.sql 최신본을 실행해 주세요"
+          exit 1
+
+  stamp:
+    if: github.event.schedule == '41 0 1 * *'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: 한 달에 한 번 기록(공개 저장소 자동 실행이 꺼지지 않게)
+        run: |
+          date -u +"%Y-%m-%dT%H:%M:%SZ" > .github/keepalive-stamp
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .github/keepalive-stamp
+          git commit -m "chore: monthly keepalive stamp" || exit 0
+          git push
