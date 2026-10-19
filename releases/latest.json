@@ -1,8 +1,8 @@
 {
- "version": "2026.10.19.7",
- "sha256": "02b6bca98967bff6b8510794dc02f8ecff80af6431397722fb79c566564672b4",
- "size": 159417,
- "file": "releases/app-2026.10.19.7.zip",
- "notes": "GitHub 자동 업데이트 시작",
+ "version": "2026.10.19.8",
+ "sha256": "011c9bdcfa602d7d288f251c50753d09b8527d2967eaaf8ea00efc12944b0407",
+ "size": 166611,
+ "file": "releases/app-2026.10.19.8.zip",
+ "notes": "사이트 공지의 대회 일정을 달력·예약 칸에 자동 반영",
  "auto": true
 }
