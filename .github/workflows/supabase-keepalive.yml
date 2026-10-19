@@ -27,13 +27,20 @@ jobs:
             echo "::error::저장소 Settings > Secrets and variables > Actions 에 SUPABASE_URL, SUPABASE_KEY 를 넣어 주세요"
             exit 1
           fi
+          # 붙여넣을 때 섞인 공백·줄바꿈·따옴표 제거
+          SUPABASE_URL=$(printf '%s' "$SUPABASE_URL" | tr -d ' \r\n"'"'"'')
+          SUPABASE_KEY=$(printf '%s' "$SUPABASE_KEY" | tr -d ' \r\n"'"'"'')
+          echo "주소: ${SUPABASE_URL}  키: ${SUPABASE_KEY:0:15}… (${#SUPABASE_KEY}자)"
+          case "$SUPABASE_KEY" in sb_publishable_*|eyJ*) ;; *) echo "::error::SUPABASE_KEY가 sb_publishable_ 로 시작하지 않아요(값이 바뀌어 들어간 듯)"; exit 1;; esac
           for i in 1 2 3; do
             code=$(curl -s -o out.json -w "%{http_code}" -X POST "${SUPABASE_URL%/}/rest/v1/rpc/keepalive" \
               -H "apikey: $SUPABASE_KEY" -H "Content-Type: application/json" -d '{}')
             echo "시도 $i: HTTP $code $(cat out.json)"
             [ "$code" = "200" ] && exit 0
+            [ "$code" = "401" ] && break
             sleep 20
           done
+          [ "$code" = "401" ] && echo "::error::키가 틀렸어요(401) · Supabase > Project Settings > API Keys 의 Publishable key를 복사해 SUPABASE_KEY 비밀값을 다시 넣어 주세요(주소도 같은 프로젝트인지 확인)" && exit 1
           echo "::error::Supabase 응답 $code · 프로젝트가 멈췄으면 Supabase 화면에서 Restore, 함수가 없으면 setup.sql 최신본을 실행해 주세요"
           exit 1
 
