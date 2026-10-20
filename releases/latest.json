@@ -1,8 +1,8 @@
 {
- "version": "2026.10.20.2",
- "sha256": "fe52b8b7c929d3884d32a4872cb579c920fab9d168f51dd8329e1b9cdc2fcf58",
- "size": 169610,
- "file": "releases/app-2026.10.20.2.zip",
- "notes": "장바구니 남은 시간을 사이트 값으로 · 화면 오류·재시작 오류 수정",
+ "version": "2026.10.20.3",
+ "sha256": "e201228ca6ce31b5e768d3b6e8da33b51af8e5857bce2b765fa83dbfd36bec7a",
+ "size": 174557,
+ "file": "releases/app-2026.10.20.3.zip",
+ "notes": "러시 중 세 계정이 거의 동시에 담기 · 대시보드에 실행 요약 올리기",
  "auto": true
 }
