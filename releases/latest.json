@@ -1,8 +1,8 @@
 {
- "version": "2026.10.20.7",
- "sha256": "3f5bb3bf83aed8bc645d09d2ee87e4243019122e0793d9ab446be69975ec7e3a",
- "size": 182734,
- "file": "releases/app-2026.10.20.7.zip",
- "notes": "연결 끊김을 누르면 다시 켜기 · 끄기 버튼",
+ "version": "2026.10.20.8",
+ "sha256": "50cfeb6edbbc69408a80dcd3634c60ea33bc970812c9c71ed2feac7b7ff73c0c",
+ "size": 186400,
+ "file": "releases/app-2026.10.20.8.zip",
+ "notes": "장바구니 시간 연장(같은 칸 1번, 경고 확인 후)",
  "auto": true
 }
