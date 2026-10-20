@@ -1,8 +1,8 @@
 {
- "version": "2026.10.20.1",
- "sha256": "ca8797abad7624797fe6cd42dc73b9ff5032c988afdaee9df3a7db4e46521561",
- "size": 167319,
- "file": "releases/app-2026.10.20.1.zip",
- "notes": "대시보드 연결 키를 바꾸면 바로 반영",
+ "version": "2026.10.20.2",
+ "sha256": "fe52b8b7c929d3884d32a4872cb579c920fab9d168f51dd8329e1b9cdc2fcf58",
+ "size": 169610,
+ "file": "releases/app-2026.10.20.2.zip",
+ "notes": "장바구니 남은 시간을 사이트 값으로 · 화면 오류·재시작 오류 수정",
  "auto": true
 }
