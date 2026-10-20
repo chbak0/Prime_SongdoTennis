@@ -1,8 +1,8 @@
 {
- "version": "2026.10.20.13",
- "sha256": "7792b6ad88f35ce1eb72523dee0b80344c5625d52ec577af741d136993a9cd0a",
- "size": 193590,
- "file": "releases/app-2026.10.20.13.zip",
- "notes": "화면이 '연결 끊김'으로 멈추던 문제 수정",
+ "version": "2026.10.20.14",
+ "sha256": "a905e2aed059bab122947103adbeafc2b557f21b1a824c49d0e3978e8fe361a3",
+ "size": 198111,
+ "file": "releases/app-2026.10.20.14.zip",
+ "notes": "더 빠른 러시(칸 생기는 구간 집중 · 느린 서버에 안 붙잡힘)",
  "auto": true
 }
