@@ -1,8 +1,8 @@
 {
- "version": "2026.10.19.8",
- "sha256": "011c9bdcfa602d7d288f251c50753d09b8527d2967eaaf8ea00efc12944b0407",
- "size": 166611,
- "file": "releases/app-2026.10.19.8.zip",
- "notes": "사이트 공지의 대회 일정을 달력·예약 칸에 자동 반영",
+ "version": "2026.10.20.1",
+ "sha256": "ca8797abad7624797fe6cd42dc73b9ff5032c988afdaee9df3a7db4e46521561",
+ "size": 167319,
+ "file": "releases/app-2026.10.20.1.zip",
+ "notes": "대시보드 연결 키를 바꾸면 바로 반영",
  "auto": true
 }
