@@ -1,8 +1,8 @@
 {
- "version": "2026.10.20.12",
- "sha256": "e37a4923cb2deba6653ed4e4d5d5ddbd3af62321bad723eb7f54941a320b9ebc",
- "size": 192974,
- "file": "releases/app-2026.10.20.12.zip",
- "notes": "자동 다시 로그인: 구글 버튼 다시 누르기",
+ "version": "2026.10.20.13",
+ "sha256": "7792b6ad88f35ce1eb72523dee0b80344c5625d52ec577af741d136993a9cd0a",
+ "size": 193590,
+ "file": "releases/app-2026.10.20.13.zip",
+ "notes": "화면이 '연결 끊김'으로 멈추던 문제 수정",
  "auto": true
 }
