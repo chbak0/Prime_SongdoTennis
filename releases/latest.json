@@ -1,8 +1,8 @@
 {
- "version": "2026.10.20.5",
- "sha256": "6aef8a6953674baac58d2ea67ec951baa793f0aaf282daa5cb02c19a70d60cac",
- "size": 178841,
- "file": "releases/app-2026.10.20.5.zip",
- "notes": "대시보드 연결 정보를 프로그램에 기본으로 넣음",
+ "version": "2026.10.20.6",
+ "sha256": "42f83c6dd25b576002edbf5674f1519c2bd3a76d17d987abe40df67f33557ada",
+ "size": 180012,
+ "file": "releases/app-2026.10.20.6.zip",
+ "notes": "업데이트 뒤 다시 켜질 때 꺼지던 문제 수정(연결 끊김)",
  "auto": true
 }
