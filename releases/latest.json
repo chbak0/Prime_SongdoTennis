@@ -1,8 +1,8 @@
 {
- "version": "2026.10.20.8",
- "sha256": "50cfeb6edbbc69408a80dcd3634c60ea33bc970812c9c71ed2feac7b7ff73c0c",
- "size": 186400,
- "file": "releases/app-2026.10.20.8.zip",
- "notes": "장바구니 시간 연장(같은 칸 1번, 경고 확인 후)",
+ "version": "2026.10.20.9",
+ "sha256": "e28a6565954cd06314eece3554ed45c72c3438aeaf92c5b9285fc0d88ad5e09b",
+ "size": 191583,
+ "file": "releases/app-2026.10.20.9.zip",
+ "notes": "오래 꺼 둔 뒤 로그인이 풀리면 자동으로 다시 로그인(계정 선택까지)",
  "auto": true
 }
