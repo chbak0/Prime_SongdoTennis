@@ -1,8 +1,8 @@
 {
- "version": "2026.10.20.9",
- "sha256": "e28a6565954cd06314eece3554ed45c72c3438aeaf92c5b9285fc0d88ad5e09b",
- "size": 191583,
- "file": "releases/app-2026.10.20.9.zip",
- "notes": "오래 꺼 둔 뒤 로그인이 풀리면 자동으로 다시 로그인(계정 선택까지)",
+ "version": "2026.10.20.10",
+ "sha256": "fb50bb093e061f3f3ba0d6ff580f08792134bd31f4b7c5a5e5ff0681292eb054",
+ "size": 192171,
+ "file": "releases/app-2026.10.20.10.zip",
+ "notes": "자동 다시 로그인 · 로그인 창을 닫으면 대기 풀기",
  "auto": true
 }
