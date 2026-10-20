@@ -1,8 +1,8 @@
 {
- "version": "2026.10.20.4",
- "sha256": "d00a65d4d85475b89098bbd1c2c0dd73093a1bb48eb01166e8c4cb9fce28692d",
- "size": 177535,
- "file": "releases/app-2026.10.20.4.zip",
- "notes": "자세한 로그를 날짜별로 · 예약 실행만 보기",
+ "version": "2026.10.20.5",
+ "sha256": "6aef8a6953674baac58d2ea67ec951baa793f0aaf282daa5cb02c19a70d60cac",
+ "size": 178841,
+ "file": "releases/app-2026.10.20.5.zip",
+ "notes": "대시보드 연결 정보를 프로그램에 기본으로 넣음",
  "auto": true
 }
