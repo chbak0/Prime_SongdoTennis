@@ -1,8 +1,8 @@
 {
- "version": "2026.10.20.10",
- "sha256": "fb50bb093e061f3f3ba0d6ff580f08792134bd31f4b7c5a5e5ff0681292eb054",
- "size": 192171,
- "file": "releases/app-2026.10.20.10.zip",
- "notes": "자동 다시 로그인 · 로그인 창을 닫으면 대기 풀기",
+ "version": "2026.10.20.11",
+ "sha256": "d8964beb7bb1cb408b8491a739864eff301e2eccaa3fc24ed6f3e34b292a5529",
+ "size": 192600,
+ "file": "releases/app-2026.10.20.11.zip",
+ "notes": "자동 다시 로그인: '구글로 계속하기'까지",
  "auto": true
 }
