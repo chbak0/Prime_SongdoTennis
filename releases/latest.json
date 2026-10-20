@@ -1,8 +1,8 @@
 {
- "version": "2026.10.20.3",
- "sha256": "e201228ca6ce31b5e768d3b6e8da33b51af8e5857bce2b765fa83dbfd36bec7a",
- "size": 174557,
- "file": "releases/app-2026.10.20.3.zip",
- "notes": "러시 중 세 계정이 거의 동시에 담기 · 대시보드에 실행 요약 올리기",
+ "version": "2026.10.20.4",
+ "sha256": "d00a65d4d85475b89098bbd1c2c0dd73093a1bb48eb01166e8c4cb9fce28692d",
+ "size": 177535,
+ "file": "releases/app-2026.10.20.4.zip",
+ "notes": "자세한 로그를 날짜별로 · 예약 실행만 보기",
  "auto": true
 }
