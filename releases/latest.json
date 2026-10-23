@@ -1,8 +1,8 @@
 {
- "version": "2026.10.23.1",
- "sha256": "986c4e6d194262433ec31c0a0e9f1221aa5727847070e63338e7e65da139573c",
- "size": 204276,
- "file": "releases/app-2026.10.23.1.zip",
- "notes": "실시간 칸 소식 받기(별도 프로세스) · 점검 기능",
+ "version": "2026.10.23.2",
+ "sha256": "21ef230abc945295faeb3a869c44d236defd05fb013c058d3949a80f10b1a25c",
+ "size": 205200,
+ "file": "releases/app-2026.10.23.2.zip",
+ "notes": "실시간 도우미: 모든 곳을 한 번에 받기",
  "auto": true
 }
