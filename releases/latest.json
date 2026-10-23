@@ -1,8 +1,8 @@
 {
- "version": "2026.10.20.14",
- "sha256": "a905e2aed059bab122947103adbeafc2b557f21b1a824c49d0e3978e8fe361a3",
- "size": 198111,
- "file": "releases/app-2026.10.20.14.zip",
- "notes": "더 빠른 러시(칸 생기는 구간 집중 · 느린 서버에 안 붙잡힘)",
+ "version": "2026.10.23.1",
+ "sha256": "986c4e6d194262433ec31c0a0e9f1221aa5727847070e63338e7e65da139573c",
+ "size": 204276,
+ "file": "releases/app-2026.10.23.1.zip",
+ "notes": "실시간 칸 소식 받기(별도 프로세스) · 점검 기능",
  "auto": true
 }
