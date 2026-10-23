@@ -1,8 +1,8 @@
 {
- "version": "2026.10.23.2",
- "sha256": "21ef230abc945295faeb3a869c44d236defd05fb013c058d3949a80f10b1a25c",
- "size": 205200,
- "file": "releases/app-2026.10.23.2.zip",
- "notes": "실시간 도우미: 모든 곳을 한 번에 받기",
+ "version": "2026.10.23.3",
+ "sha256": "b78958bffe053fdc776111ae22a667c261603ab93b742c9654af418f27814ae0",
+ "size": 205506,
+ "file": "releases/app-2026.10.23.3.zip",
+ "notes": "실시간 점검 중 꺼지지 않게 · 실시간 연결 더 일찍",
  "auto": true
 }
